@@ -251,7 +251,7 @@ const Dashboard = () => {
                         <p className="text-sm text-text-secondary font-medium">Coordinate a shipment to build your trust ranking!</p>
                       </div>
                     </div>
-                    <Link to="/requests" className="btn-secondary h-10 px-6 text-xs uppercase tracking-widest font-bold shrink-0">Guild Board</Link>
+                    <Link to="/requests" className="btn-secondary h-10 px-6 py-2 text-xs align-center uppercase tracking-widest font-bold shrink-0">Guild Board</Link>
                   </div>
                 )}
               </div>

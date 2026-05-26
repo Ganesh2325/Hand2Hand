@@ -59,15 +59,7 @@ const MainLayout = ({ children }) => {
           ))}
         </nav>
 
-        <div className="pt-6 mt-6 border-t border-border-subtle space-y-4">
-          <div className="p-3 rounded-xl bg-bg-alt border border-border-subtle flex items-center gap-3 mb-4">
-            <div className="w-9 h-9 rounded-lg bg-text-primary shadow-sm flex items-center justify-center text-white font-bold text-sm uppercase">
-              {user?.name?.[0] || 'U'}
-            </div>
-            <div className="overflow-hidden">
-              <p className="text-[11px] font-bold text-text-primary truncate">{user?.name?.split(' ')[0]}</p>
-            </div>
-          </div>
+        <div className="pt-6 mt-6 border-t border-border-subtle">
 
           <button
             onClick={logout}

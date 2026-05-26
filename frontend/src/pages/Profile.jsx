@@ -131,7 +131,7 @@ const Profile = () => {
             {/* Profile Header */}
             <div className="relative">
                {/* Cover Area */}
-               <div className="h-48 rounded-[3rem] bg-gradient-to-r from-primary-teal via-muted-gray to-accent-cyan shadow-2xl overflow-hidden relative">
+               <div className="h-39 rounded-[3rem] bg-gradient-to-r from-primary-teal via-muted-gray to-accent-cyan shadow-2xl overflow-hidden relative">
                   <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10" />
                </div>
 
@@ -144,26 +144,16 @@ const Profile = () => {
                            <div className="absolute inset-0 bg-white/20 blur-xl translate-y-full" />
                         </div>
                      </div>
-                     <button className="absolute bottom-2 right-2 w-10 h-10 rounded-full bg-white shadow-xl flex items-center justify-center text-primary-teal hover:scale-110 transition-transform">
-                        <Camera size={20} />
-                      </button>
                   </div>
 
                   <div className="flex-1 pb-4 text-center md:text-left">
                      <h1 className="text-5xl font-black text-text-primary tracking-tight mb-2 flex items-center justify-center md:justify-start gap-3">
-                        {profile?.name} <BadgeCheck className="text-primary-teal" size={32} />
+                        {profile?.name} <BadgeCheck className="text-primary-blue" size={32} />
                      </h1>
                      <p className="text-lg text-text-secondary font-medium">Verified Campus Member • {profile?.department || 'General Department'}</p>
                      <p className="text-xs text-text-muted font-bold uppercase tracking-widest mt-1.5 flex items-center justify-center md:justify-start gap-1">
                         Level: <span className="text-primary-teal">{profile?.level || 'Beginner Helper'}</span> • {profile?.xp || 0} XP
                      </p>
-                  </div>
-
-                  <div className="pb-4 flex gap-4">
-                     <button onClick={() => setIsEditMode(true)} className="btn-secondary px-8">Edit Profile</button>
-                     <div className="w-14 h-14 rounded-2xl bg-white border border-muted-gray/20 flex items-center justify-center text-text-muted hover:text-primary-teal transition-colors shadow-sm">
-                        <Settings size={24} />
-                     </div>
                   </div>
                </div>
             </div>
@@ -295,16 +285,6 @@ const Profile = () => {
                            <div>
                               <p className="text-[10px] font-black text-text-placeholder uppercase tracking-widest mb-1">Department / Branch</p>
                               <p className="text-base font-bold text-text-primary">{profile?.department || 'General'}</p>
-                           </div>
-                        </div>
-
-                        <div className="flex items-start gap-5">
-                           <div className="w-12 h-12 rounded-2xl bg-bg-alt flex items-center justify-center text-text-muted shrink-0 border border-muted-gray/10">
-                              <MapPin size={22} />
-                           </div>
-                           <div>
-                              <p className="text-[10px] font-black text-text-placeholder uppercase tracking-widest mb-1">Guild Campus Location</p>
-                              <p className="text-base font-bold text-text-primary">Main Campus Central</p>
                            </div>
                         </div>
                      </div>

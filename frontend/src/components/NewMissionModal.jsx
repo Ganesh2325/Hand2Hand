@@ -180,12 +180,11 @@ const NewMissionModal = ({ isOpen, onClose, onSuccess }) => {
             <div className="space-y-2 relative">
               <label className="text-[11px] font-bold text-text-muted uppercase tracking-widest ml-1">Pickup location</label>
               <div className="relative">
-                <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted" size={18} />
                 <input
                   required
                   type="text"
                   placeholder="Select pickup place..."
-                  className="input-field pl-12"
+                  className="input-field"
                   value={pickupSearch}
                   onChange={e => {
                     setPickupSearch(e.target.value);
@@ -232,12 +231,11 @@ const NewMissionModal = ({ isOpen, onClose, onSuccess }) => {
             <div className="space-y-2 relative">
               <label className="text-[11px] font-bold text-text-muted uppercase tracking-widest ml-1">Drop Location</label>
               <div className="relative">
-                <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted" size={18} />
                 <input
                   required
                   type="text"
                   placeholder="Select drop place..."
-                  className="input-field pl-12"
+                  className="input-field"
                   value={dropSearch}
                   onChange={e => {
                     setDropSearch(e.target.value);

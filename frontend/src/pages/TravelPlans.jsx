@@ -79,10 +79,6 @@ const TravelPlans = () => {
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 bg-gradient-to-r from-deep-teal to-primary-teal p-8 md:p-12 rounded-3xl text-white shadow-xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-accent-cyan/10 rounded-full blur-3xl pointer-events-none" />
           <div className="max-w-2xl relative z-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-cyan/20 border border-accent-cyan/30 mb-4">
-              <Sparkles size={12} className="text-accent-cyan animate-pulse" />
-              <span className="text-[10px] font-black uppercase tracking-widest text-accent-cyan">Campus Route Network v2.0</span>
-            </div>
             <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4 leading-tight text-white">
               Smart Campus Route Explorer
             </h1>
@@ -92,7 +88,7 @@ const TravelPlans = () => {
           </div>
           <button 
             onClick={() => setIsModalOpen(true)}
-            className="btn-primary px-8 py-5 h-auto text-sm tracking-wider uppercase font-black bg-white text-deep-teal border-none hover:bg-accent-cyan hover:text-deep-teal transition-all shadow-lg shrink-0 flex items-center gap-2 self-start lg:self-auto"
+            className="btn-primary px-8 py-5 h-auto text-sm tracking-wider uppercase font-black bg-white border-none hover:bg-accent-cyan transition-all shadow-lg shrink-0 flex items-center gap-2 self-start lg:self-auto"
           >
             <Plus size={18} /> Post Delivery Request
           </button>
@@ -107,7 +103,7 @@ const TravelPlans = () => {
             <section className="space-y-6">
               <div className="flex items-center justify-between">
                 <h3 className="text-2xl font-black text-text-primary tracking-tight">
-                  🌐 Active Campus Routes Board ({plans.length})
+                   Active Campus Routes Board ({plans.length})
                 </h3>
                 <span className="px-3 py-1 rounded-full bg-deep-teal/10 text-deep-teal border border-deep-teal/20 text-[10px] font-bold uppercase tracking-widest">
                   Live Broadcasts
@@ -188,7 +184,7 @@ const TravelPlans = () => {
             
             <section className="space-y-6">
               <h3 className="text-2xl font-black text-text-primary tracking-tight">
-                📍 Campus Explorer
+                 Campus Explorer
               </h3>
 
               <div className="glass-card p-6 border border-white bg-white/95 space-y-6">

@@ -38,15 +38,6 @@ const Leaderboard = () => {
                <p className="text-xl text-text-secondary font-medium">Recognizing the students who go above and beyond to help our community thrive.</p>
             </motion.div>
           </div>
-          <div className="glass-card px-10 py-6 flex items-center gap-6 !bg-white/60">
-             <div className="w-14 h-14 rounded-2xl bg-primary-blue/20 flex items-center justify-center text-primary-blue shadow-lg">
-                <Trophy size={32} />
-             </div>
-             <div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-text-muted leading-none mb-1">Your Rank</p>
-                <p className="text-2xl font-black text-text-primary">#42 <span className="text-sm font-bold text-emerald-500 ml-2">↑ 5</span></p>
-             </div>
-          </div>
         </div>
 
         {/* Top 3 Spotlight - Ultra Premium */}
